@@ -1,0 +1,52 @@
+.mainContainer{
+    display: flex;
+    width: 90vw;
+    height: 15vh;
+    background-color: var(--containerColor);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .75em;
+    margin-top: 2vh;
+}
+
+.imageContainer, .buttonContainer{
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+}
+
+
+.linksContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+}   
+
+.links{
+    text-decoration: none;
+    font-family: jotiOne;
+    color: var(--buttonBgColor);
+}
+
+.links:hover{
+    color: black;
+    font-style: italic;
+}
+
+.buttonContainer button{
+    width: 6vw;
+    height: 4vh;
+    background-color: var(--buttonBgColor);
+    border-radius: .75em;
+    border: none;
+    color:ghostwhite;
+    font-family: var(--textFont);
+    font-size: larger;
+}
+
+.buttonContainer button:hover{
+    color: gold;
+    width: 7vw;
+    height: 5vh;  
+    font-size:x-large;
+}

@@ -1,0 +1,37 @@
+.mainContainer{
+    margin-top: 3vh;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    background-color: var(--containerColor);
+    border-radius: .75em;
+}
+
+.copyright{
+    width: 60vw;
+    font-family: jotiOne;
+    color: var(--buttonBgColor);
+}
+.copyright p{
+    padding-left: 2vw;
+}
+
+.linkContainer{
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links{
+    text-decoration: none;
+    font-family: jotiOne;
+    color: var(--buttonBgColor);
+    font-size: small;
+}
+
+.links:hover{
+    color: black;
+    font-style: italic;
+}
