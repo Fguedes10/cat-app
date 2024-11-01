@@ -4,9 +4,9 @@ const key = process.env.CAT_API_KEY;
 
 const ApiQueries = {
 
-    getAllBreeds: async (limit: number, page: number) => {
+    getAllBreeds: async () => {
 
-        const response = await fetch(url + `breeds?limit=${limit}&page=${page}`, {
+        const response = await fetch(`https://api.thecatapi.com/v1/breeds`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
