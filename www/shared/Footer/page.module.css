@@ -1,25 +1,22 @@
-.mainContainer{
-    margin-top: 3vh;
-    height: 6vh;
-    display: flex;
+.mainContainer {
+    margin-top: clamp(2vh, 3vh, 5vh);
+    height: clamp(4vh, 6vh, 8vh);
     justify-content: center;
     align-items: center;
-    width: 90vw;
+    width: clamp(80vw, 90vw, 100vw); 
     background-color: var(--containerColor);
-    border-radius: .75em;
-}
+    border-radius: 0.75em;
+  }
 
 .copyright{
-    width: 60vw;
+    width: clamp(40vw, 60vw, 80vw);
     font-family: jotiOne;
     color: var(--buttonBgColor);
-}
-.copyright p{
     padding-left: 2vw;
-}
 
+}
 .linkContainer{
-    width: 30vw;
+    width: clamp(20vw, 30vw, 40vw);
     display: flex;
     justify-content: space-around;
 }

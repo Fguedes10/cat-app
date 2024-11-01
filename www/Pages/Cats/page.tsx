@@ -8,12 +8,6 @@ import CatCard from "./components/PetCard/page";
 import PaginationComponent from "./components/Pagination/page";
 import FilterBar from "./components/filterBar/page";
 
-interface Cat {
-  id: string; 
-  name: string;
-  intelligence: number;
-  origin: string;
-}
 
 const CatsPage = () => {
   const { data, error, isLoading } = useGetAllBreed();
@@ -23,11 +17,10 @@ const CatsPage = () => {
 
   const itemsPerPage = 12;
   
-  const filteredData = data?.filter(cat => {
-    const matchesBreed = selectedBreed ? cat.name === selectedBreed : true;
-    const matchesOrigin = selectedOrigin ? cat.origin === selectedOrigin : true;
-    return matchesBreed && matchesOrigin;
-  }) || [];
+  const filteredData = (data || []).filter(cat =>
+    (!selectedBreed || cat.name === selectedBreed) &&
+    (!selectedOrigin || cat.origin === selectedOrigin)
+  );
 
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
   const paginatedData = filteredData.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);

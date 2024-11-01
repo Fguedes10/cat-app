@@ -1,12 +1,11 @@
 
-const url = process.env.CAT_API_URL;
-const key = process.env.CAT_API_KEY;
+const url = "https://api.thecatapi.com/v1/breeds"
 
 const ApiQueries = {
 
     getAllBreeds: async () => {
 
-        const response = await fetch(`https://api.thecatapi.com/v1/breeds`, {
+        const response = await fetch(url, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -21,7 +20,7 @@ const ApiQueries = {
 
     getBreedById: async (id: number) => {
         
-        const response = await fetch(url + `breeds/${id}`,{
+        const response = await fetch(url + `/${id}`,{
             method:"GET",
             headers: {
                 "Content-Type": "application/json",
