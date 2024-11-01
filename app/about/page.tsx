@@ -1,9 +1,6 @@
-import AboutPage from "../../www/Pages/About/page"
+import AboutPage from "../../www/Pages/About/page";
 
-const About =() => {
-
-    return(
-        <AboutPage />
-    )
-}
+const About = () => {
+  return <AboutPage />;
+};
 export default About;

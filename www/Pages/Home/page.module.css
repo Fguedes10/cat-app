@@ -1,23 +1,25 @@
-.mainContainer{
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.mainContainer {
+  height: clamp(60vh, 70vh, 80vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.imageContainer{
-    display: flex;
-    justify-content: center;
-    height: 30vh;
-    width: 90vw;
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  height: clamp(25vh, 30vh, 35vh);
+  width: clamp(80vw, 90vw, 95vw);
 }
 
-.intro h1{
-    font-family: jersey25;
-    text-align: center;
+.intro h1 {
+  font-family: jersey25;
+  text-align: center;
+  font-size: clamp(1.5em, 2em, 2.5em);
 }
 
-.intro p{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+.intro p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: clamp(1em, 1.25em, 1.5em);
 }

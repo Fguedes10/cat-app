@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/www/shared/Navbar/page";
 import Footer from "../www/shared/Footer/page";
-import ClientProvider from "./ClientProvider"; 
+import ClientProvider from "./ClientProvider";
 
 const jersey25 = localFont({
   src: "./fonts/Jersey25.woff",

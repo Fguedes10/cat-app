@@ -1,51 +1,52 @@
 .mainContainer {
-    display: flex;
-    width: clamp(80vw, 90vw, 100vw);
-    height: clamp(10vh, 15vh, 20vh);
-    background-color: var(--containerColor);
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 0.75em;
-    margin-top: clamp(1vh, 2vh, 4vh);
-  }
-
-  .imageContainer, .buttonContainer {
-    display: flex;
-    justify-content: center;
-    width: clamp(25vw, 30vw, 40vw); 
-  }
-  
-  .linksContainer {
-    display: flex;
-    justify-content: space-between;
-    width: clamp(25vw, 30vw, 40vw); 
-  }   
-
-.links{
-    text-decoration: none;
-    font-family: jotiOne;
-    color: var(--buttonBgColor);
+  display: flex;
+  width: clamp(80vw, 90vw, 100vw);
+  height: clamp(10vh, 15vh, 20vh);
+  background-color: var(--containerColor);
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.75em;
+  margin-top: clamp(1vh, 2vh, 4vh);
 }
 
-.links:hover{
-    color: black;
-    font-style: italic;
+.imageContainer,
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  width: clamp(25vw, 30vw, 40vw);
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: space-between;
+  width: clamp(25vw, 30vw, 40vw);
+}
+
+.links {
+  text-decoration: none;
+  font-family: jotiOne;
+  color: var(--buttonBgColor);
+}
+
+.links:hover {
+  color: black;
+  font-style: italic;
 }
 
 .buttonContainer button {
-    width: clamp(4vw, 6vw, 8vw);      
-    height: clamp(3vh, 4vh, 5vh);    
-    background-color: var(--buttonBgColor);
-    border-radius: 0.75em;
-    border: none;
-    color: ghostwhite;
-    font-family: var(--textFont);
-    font-size: clamp(1em, 1.25em, 1.5em);
-  }
+  width: clamp(4vw, 6vw, 8vw);
+  height: clamp(3vh, 4vh, 5vh);
+  background-color: var(--buttonBgColor);
+  border-radius: 0.75em;
+  border: none;
+  color: ghostwhite;
+  font-family: var(--textFont);
+  font-size: clamp(1em, 1.25em, 1.5em);
+}
 
-  .buttonContainer button:hover {
-    color: gold;
-    width: clamp(5vw, 7vw, 9vw);      
-    height: clamp(4vh, 5vh, 6vh);       
-    font-size: clamp(1.25em, 1.5em, 1.75em);
-  }
+.buttonContainer button:hover {
+  color: gold;
+  width: clamp(5vw, 7vw, 9vw);
+  height: clamp(4vh, 5vh, 6vh);
+  font-size: clamp(1.25em, 1.5em, 1.75em);
+}

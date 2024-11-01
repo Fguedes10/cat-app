@@ -1,26 +1,25 @@
 .catContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: clamp(60vw, 80vw, 100vw); /* Responsive width */
-    height: clamp(50vh, 65vh, 80vh);  /* Responsive height */
-    margin-top: 1vh;
-    column-gap: 1vw;
-  }
-  
-  .catContainer div:nth-child(2n) {
-    border: 2px dotted gray;
-  }
-  
-  .catCard {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: clamp(12vw, 18vw, 22vw); 
-    height: clamp(15vh, 20vh, 25vh);
-    border: 1px solid black;
-    border-radius: 0.75em;
-  }
-  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: clamp(60vw, 80vw, 100vw);
+  height: clamp(50vh, 65vh, 80vh);
+  margin-top: 1vh;
+  column-gap: 1vw;
+}
+
+.catContainer div:nth-child(2n) {
+  border: 2px dotted gray;
+}
+
+.catCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: clamp(12vw, 18vw, 22vw);
+  height: clamp(15vh, 20vh, 25vh);
+  border: 1px solid black;
+  border-radius: 0.75em;
+}
